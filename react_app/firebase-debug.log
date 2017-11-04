@@ -1,0 +1,46 @@
+[debug] [2017-11-04T05:15:00.958Z] ----------------------------------------------------------------------
+[debug] [2017-11-04T05:15:00.961Z] Command:       /Users/lewis/.nvm/versions/node/v6.11.1/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-11-04T05:15:00.961Z] CLI Version:   3.13.1
+[debug] [2017-11-04T05:15:00.962Z] Platform:      darwin
+[debug] [2017-11-04T05:15:00.962Z] Node Version:  v6.11.1
+[debug] [2017-11-04T05:15:00.962Z] Time:          Sat Nov 04 2017 15:45:00 GMT+1030 (ACDT)
+[debug] [2017-11-04T05:15:00.962Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-04T05:15:00.973Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-04T05:15:00.974Z] > authorizing via signed-in user
+[debug] [2017-11-04T05:15:00.976Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ethereal-accord-184722  
+ Sat Nov 04 2017 15:45:00 GMT+1030 (ACDT)
+[debug] [2017-11-04T05:15:02.172Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-04T05:15:02.173Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ethereal-accord-184722/tokens  
+ Sat Nov 04 2017 15:45:02 GMT+1030 (ACDT)
+[debug] [2017-11-04T05:15:11.065Z] <<< HTTP RESPONSE 200
+[info] 2
+[info] 
+[info] === Deploying to 'ethereal-accord-184722'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2017-11-04T05:15:13.233Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "^4.1.2",
+    "firebase-functions": "^0.5",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-11-04T05:15:13.235Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/ethereal-accord-184722?view=CONSUMER_VIEW  
+ Sat Nov 04 2017 15:45:13 GMT+1030 (ACDT)
+[debug] [2017-11-04T05:15:13.235Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/ethereal-accord-184722?view=CONSUMER_VIEW  
+ Sat Nov 04 2017 15:45:13 GMT+1030 (ACDT)
+[debug] [2017-11-04T05:15:14.597Z] <<< HTTP RESPONSE 200
+[info] ✔  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-11-04T05:15:14.617Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2017-11-04T05:15:14.619Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/ethereal-accord-184722  
+ Sat Nov 04 2017 15:45:14 GMT+1030 (ACDT)
+[debug] [2017-11-04T05:15:14.619Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/ethereal-accord-184722/apiKeys  
+ Sat Nov 04 2017 15:45:14 GMT+1030 (ACDT)

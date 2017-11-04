@@ -4,8 +4,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd "$DIR"/functions && npm install
 
-if [ "$1" -eq "build" ]; then
-	cd "$DIR"/react_app	&& yarn build
+if [ "$1" == "build" ]; then
+	 "$DIR"/react_app/_build.sh
 fi
 
 firebase deploy
