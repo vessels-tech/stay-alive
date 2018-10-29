@@ -1,8 +1,16 @@
+// import { serviceAccountKeyFileName, databaseUrl, storageBucket } from "../utils/Env";
 const functions = require('firebase-functions');
-const admin = require('firebase-admin');
 const request = require('request-promise');
 
-admin.initializeApp(functions.config().firebase);
+const serviceAccount = require("./.serviceAccountKey.json");
+
+const admin = require('firebase-admin');
+if (admin.apps.length === 0) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://ethereal-accord-184722.firebaseio.com"
+  });
+}
 
 
 const callUrl = (url, method, bodyStr) => {
